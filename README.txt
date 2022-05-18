@@ -6,7 +6,7 @@ DISCLAIMER - This program wasn't written with public distribution in mind. There
 
 compile: gcc Doomsday.c -o Doomsday
 
-usage: ./Doomsday.exe <troop_base.txt> <troop_bonus_base.txt>
+usage: ./Doomsday <troop_base.txt> <troop_bonus_base.txt>
 
 FILES:
 
