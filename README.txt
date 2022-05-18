@@ -3,6 +3,7 @@ Doomsday v2.0 - Written by [MMM] Heretical Hermit
 DISCLAIMER - This program wasn't written with public distribution in mind. Therefore:
 			A) It's not terribly user friendly.
 			B) The code is not terribly readable.
+			C) The code is full of bugs.
 
 compile: gcc Doomsday.c -o Doomsday
 
