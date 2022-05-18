@@ -456,6 +456,11 @@ void set_troop_types(struct troop_selection *T_SELECT)
 		{
 			case 1:
 				troop_quantities_set=false;
+				T_SELECT->unlocked_all_guards=false;
+				T_SELECT->unlocked_guard_ranged=false; 
+				T_SELECT->unlocked_guard_melee=false;
+				T_SELECT->unlocked_guard_mounted=false;
+				T_SELECT->unlocked_guard_flying=false;
 				printf("\n\nminimum guards to send? (1-9, 0 for none) ");
 				fflush(stdout);
 				scanf("%d",&T_SELECT->min_guard);
@@ -518,6 +523,11 @@ void set_troop_types(struct troop_selection *T_SELECT)
 				break;
 			case 2:
 				troop_quantities_set=false;
+				T_SELECT->unlocked_all_specs=false;
+				T_SELECT->unlocked_spec_ranged=false; 
+				T_SELECT->unlocked_spec_melee=false;
+				T_SELECT->unlocked_spec_mounted=false;
+				T_SELECT->unlocked_spec_flying=false;
 				printf("\n\nminimum specialists to send? (1-9, 0 for none) ");
 				fflush(stdout);
 				scanf("%d",&T_SELECT->min_spec);
@@ -579,6 +589,7 @@ void set_troop_types(struct troop_selection *T_SELECT)
 				break;
 			case 3:
 				troop_quantities_set=false;
+				for(i=0;i<T_CNT;i++) if( TROOPS[i].ADL='D' ) TROOPS[i].included=false;
 				printf("\n\nminimum monsters to send? (1-9, 0 for none) ");
 				fflush(stdout);
 				scanf("%d",&T_SELECT->min_monster);
@@ -597,6 +608,7 @@ void set_troop_types(struct troop_selection *T_SELECT)
 
 			case 4: 
 				troop_quantities_set=false;
+				for(i=0;i<T_CNT;i++) if( TROOPS[i].ADL='A' ) TROOPS[i].included=false;
 				printf("\n\ntier of mercs? (5-7,9, 0 for none) ");
 				fflush(stdout);
 				scanf("%d",&T_SELECT->merc_tier);
