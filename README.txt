@@ -81,5 +81,6 @@ USING THE PROGRAM:
 	- option to write out troops quantities to a text file
 	- use bonus base file for no equipment, add/change equipment bonuses in-program
 	- change silver cost per troop in-program 
-	- simulate same troop quantities across multiple captains (currently changing your captain necessitates re-doing the quantities)
+	- simulate same troop quantities across multiple captains 
+		(currently changing your captain necessitates re-doing the quantities)
 	- add VP percentage to default quantities, add support for Doria 
