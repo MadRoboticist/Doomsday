@@ -16,6 +16,7 @@ troop_base.txt
 	This can be edited fairly easily to add mercenaries which haven't been included.
 	Currently the file only includes t9 mercenaries. t7 and lower mercenaries must be added to be used.
 	The file does not include siege or spies. I generally do not recommend sending siege or spies to DD, but these can be added if you want.
+	The silver cost is encoded in this file, and will need to be changed as you update your guards/specialists/monster cost. It's currently set up for mine.
 	
 troop_bonus_base.txt (I created variations for two different sets of armor - orange and purple)
 	This file must be edited for your troop health and strength bonuses for whatever armor you'll use.
@@ -74,3 +75,11 @@ USING THE PROGRAM:
 	V)		You can simulate repeatedly for the same number of stacks, and can select whether or not you get first strike each time. 
 			Average costs are calculated for however many runs you've simulated.
 	
+	
+	
+	POSSIBLE IMPROVEMENTS:
+	- option to write out troops quantities to a text file
+	- use bonus base file for no equipment, add/change equipment bonuses in-program
+	- change silver cost per troop in-program 
+	- simulate same troop quantities across multiple captains (currently changing your captain necessitates re-doing the quantities)
+	- add VP percentage to default quantities, add support for Doria 
